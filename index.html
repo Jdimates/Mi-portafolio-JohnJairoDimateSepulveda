@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Jairo Dimate Sepúlveda | Portafolio Profesional</title>
+    <style>
+        /* Estilos Generales y Variables */
+        :root {
+            --primary-color: #0f172a;
+            --accent-color: #2563eb;
+            --bg-light: #f8fafc;
+            --text-main: #334155;
+            --text-light: #64748b;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        /* Encabezado y Navegación */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 1rem 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p.subtitle {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            font-size: 0.95rem;
+        }
+
+        .contact-links a {
+            color: #e2e8f0;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .contact-links a:hover {
+            background: var(--accent-color);
+        }
+
+        /* Contenedor Principal */
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Secciones y Tarjetas */
+        section {
+            background: var(--card-bg);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.2rem;
+            font-size: 1.4rem;
+        }
+
+        /* Habilidades (Skills) */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-category {
+            background: #f1f5f9;
+            padding: 1rem;
+            border-radius: 6px;
+        }
+
+        .skill-category h3 {
+            font-size: 1rem;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-category ul {
+            list-style: none;
+        }
+
+        .skill-category li {
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+        }
+
+        /* Proyectos y Experiencia */
+        .item-card {
+            margin-bottom: 1.5rem;
+        }
+
+        .item-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+
+        .item-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+        }
+
+        .item-date {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .item-sub {
+            font-style: italic;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+
+        ul.item-details {
+            margin-left: 1.2rem;
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>John Jairo Dimate Sepúlveda</h1>
+        <p class="subtitle">Desarrollador Web Frontend & Analista de Datos</p>
+        <div class="contact-links">
+            <span>📍 Medellín, Colombia</span>
+            <a href="tel:3134961830">📱 3134961830</a>
+            <a href="mailto:johnfelipe25@gmail.com">✉️ johnfelipe25@gmail.com</a>
+            <a href="https://www.linkedin.com/in/john-dimate-sepulveda" target="_blank">LinkedIn</a>
+            <a href="https://github.com/johndimate" target="_blank">GitHub</a>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Perfil Profesional -->
+        <section>
+            <h2>Perfil Profesional</h2>
+            <p>
+                Tecnólogo en Análisis y Desarrollo de Sistemas de Información (ADSI) especializado en <strong>Análisis de Datos</strong> y <strong>Desarrollo Web Frontend</strong>. Experiencia integrando la gestión operativa y de compras con soluciones tecnológicas basadas en datos. Dominio de JavaScript, Python, SQL y Laravel para la creación de aplicaciones interactivas y la generación de métricas de rendimiento. Habilidad comprobada en la automatización de informes, optimización de procesos y trabajo en equipo enfocando los resultados en la toma de decisiones.
+            </p>
+        </section>
+
+        <!-- Habilidades Técnicas -->
+        <section>
+            <h2>Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend & Web</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>PHP & Laravel</li>
+                        <li>Lógica de componentes</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Análisis de Datos</h3>
+                    <ul>
+                        <li>Python (Pandas, NumPy)</li>
+                        <li>Matplotlib / Visualización</li>
+                        <li>SQL & SQLite</li>
+                        <li>Excel Avanzado</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Herramientas & IT</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>Mantenimiento Cómputo</li>
+                        <li>Administración Web</li>
+                        <li>Inglés (Nivel A1)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos Destacados -->
+        <section>
+            <h2>Proyectos Destacados</h2>
+            
+            <div class="item-card">
+                <div class="item-header">
+                    <span class="item-title">Plataforma de Análisis de Ventas y Cuadro de Mando</span>
+                    <span class="item-date">2026</span>
+                </div>
+                <div class="item-sub">Proyecto de Bootcamp - Análisis de Datos</div>
+                <ul class="item-details">
+                    <li>Diseñé e implementé un flujo de extracción y limpieza de datos transaccionales con Python y SQLite.</li>
+                    <li>Creé gráficos analíticos e indicadores clave (KPIs) para optimizar el seguimiento de ventas, reduciendo el tiempo de procesamiento manual de informes.</li>
+                </ul>
+            </div>
+
+            <div class="item-card">
+                <div class="item-header">
+                    <span class="item-title">Aplicación Web Interactiva Frontend</span>
+                    <span class="item-date">2026</span>
+                </div>
+                <div class="item-sub">Proyecto Personal / Bootcamp</div>
+                <ul class="item-details">
+                    <li>Desarrollé interfaces dinámicas aplicando HTML5, CSS3 y JavaScript para la evaluación y gestión de métricas operativas.</li>
+                    <li>Integré validaciones del lado del cliente e interacción fluida con el DOM para mejorar la experiencia de usuario.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Experiencia Laboral -->
+        <section>
+            <h2>Experiencia Laboral</h2>
+
+            <div class="item-card">
+                <div class="item-header">
+                    <span class="item-title">Analista de Compras e IT</span>
+                    <span class="item-date">Septiembre 2018 – Presente</span>
+                </div>
+                <div class="item-sub">IP Integrales</div>
+                <ul class="item-details">
+                    <li>Administré y mantuve el sitio web corporativo, garantizando la disponibilidad y actualización de la plataforma.</li>
+                    <li>Lideré el mantenimiento preventivo y correctivo de los equipos de cómputo de la compañía.</li>
+                    <li>Estructuré el control de compras e inventario tecnológico mediante el uso de Excel Avanzado e informes continuos.</li>
+                </ul>
+            </div>
+
+            <div class="item-card">
+                <div class="item-header">
+                    <span class="item-title">Analista de Inventarios</span>
+                    <span class="item-date">Marzo 2015 – Abril 2018</span>
+                </div>
+                <div class="item-sub">Conectar TV</div>
+                <ul class="item-details">
+                    <li>Dirigí personal a cargo para la distribución y control de activos tecnológicos.</li>
+                    <li>Consolidé la entrega de informes de gestión e indicadores clave de servicio al cliente.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Educación y Formación -->
+        <section>
+            <h2>Educación & Certificaciones</h2>
+            
+            <div class="item-card">
+                <div class="item-header">
+                    <span class="item-title">Bootcamp en Análisis de Datos y Programación Web Frontend</span>
+                    <span class="item-date">2026</span>
+                </div>
+            </div>
+
+            <div class="item-card">
+                <div class="item-header">
+                    <span class="item-title">Tecnólogo en Análisis y Desarrollo de Sistemas de Información (ADSI)</span>
+                    <span class="item-date">2019 – 2022</span>
+                </div>
+                <div class="item-sub">SENA</div>
+            </div>
+
+            <div class="item-card">
+                <div class="item-header">
+                    <span class="item-title">Técnico en Sistemas</span>
+                    <span class="item-date">2000 – 2002</span>
+                </div>
+                <div class="item-sub">Ingabo</div>
+            </div>
+
+            <div style="margin-top: 1.5rem;">
+                <h3 style="font-size: 1rem; color: var(--accent-color); margin-bottom: 0.5rem;">Cursos Complementarios</h3>
+                <ul class="item-details">
+                    <li><strong>Fundamentos de Python</strong> - Platzi (2023)</li>
+                    <li><strong>Curso PHP & Laravel 1 y 2</strong> - Fundación View (2021 – 2022)</li>
+                    <li><strong>Inglés A1</strong> - SENA (2023)</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 John Jairo Dimate Sepúlveda. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
